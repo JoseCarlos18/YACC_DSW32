@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Articulo</title>
+<link href="css/articulo-estilo.css" type="text/css" rel="stylesheet" media="screen"> 
+<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".links a").click(function(e){
+			e.preventDefault();
+			$.ajax({
+				data: "opcion="+$(this).attr("href").split("#")[1],
+				url:"consulta.php",
+				success:function(r){
+					$(".respuesta").html(r);
+				}
+			});
+		});
+	 });
+					  
+	
+	</script>
+</head>
+
+<body background="imagenes/portrait-wallpaper-19.jpg">
+<div class="container">
+<div class="nombre" id="inicio"><h1>HTC desire 650</h1>
+<div><b>tamaño de pantalla:</b> Pantalla 5", 1280 x 720 pixels</div>
+<div><b>procesador:</b>Procesador Snapdragon 410, 2GB RAM</div>
+<div><b>almacenamiento:</b>16GB, microSD expandible hasta 2 TB</div>
+<div><b>camara trasera:</b>Cámara 13 MP con flash led</div>
+<div><b>camara frontal:</b>Cámara 5 MP</div>
+<div><b>bateria:</b>Batería 2200 mAh</div>
+<div><b>Software:</b> Android 6.0</div>
+<div><b>dimension y peso:</b>146,9 x 70,9 x 8,4 milímetros y 140 gramos</div>
+</div>
+<img src="imagenes/HTC-Desire-650-0.jpg" alt="HTC">
+<div class="links">
+<ul>
+<li><a href="#pag1">Funcionalidad</a></li>
+<li><a href="#pag2">Mas Pixeles</a></li>
+<li><a href="#pag3">Sonido</a></li>
+<li><a href="#pag4">Pantalla</a></li>
+</ul>
+</div>
+<hr class="clear"/>
+<div id="pag2"><h1>Más Pixeles</h1>
+<img src="imagenes/HTC-Desire-650-Review-020-cam.jpg">
+<br><br> los buenos momentos en compañía de los amigos con más claridad. HTC Desire 650 tiene los píxeles que necesitas para tomar fotos y vídeos más nítidos allá donde vayas. Además, puedes incluir más detalles en cada foto con el barrido panorámico que te permite tomar fotos con una panorámica de hasta 180º; perfecto para unas fotos majestuosas de las montañas. Y cuando se apagan las luces, el sensor BSI de la cámara garantiza fotos sensacionales con poca iluminación.<br><a href="#inicio">regresar al inicio</a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</div><div id="pag3"><h1>Sonido mas Sofistificado</h1>
+<img src="imagenes/HTC-Desire-650_2-medium.jpg">
+<br><br><br>Ponte los auriculares y déjate llevar por un sonido mejor de lo que nunca pensante que sería posible en un smartphone. HTC Desire 650 tiene alta resolución certificada, lo que significa que es capaz de ofrecer un audio de alta calidad que da vida a todas las notas, los matices y los detalles tonales de tu música y películas favoritas como nunca en el pasado.<br><a href="#inicio"><regresar></regresar> inicio</a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</div><div id="pag4"><h1>Pantalla mas resistente</h1>
+<img src="imagenes/161124-htc-desire-650-02.jpg">
+<br><br><br>El aspecto es importante. Especialmente cuando se trata de la pantalla del teléfono. Es por ello que el HTC Desire 650 cuenta con cristal Corning® Gorilla® cubriendo nuestra brillante pantalla de 5 pulgadas 720 p. Es transparente, ultra fuerte y antirrayaduras.<br><a href="#inicio">regresar al inicio</a> </div><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+</body>
+</html>
+
